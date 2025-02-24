@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav,.nav1{
+    width: 100vw;
+    background-color: black;
+    padding: 15px;
+    color: brown;
+}
+.nav1{
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    font-weight: bolder;
+
+}
+.nav1 li:nth-child(3){
+    position: relative;
+}
+.drop{
+    position: absolute;
+    background-color: lawngreen;
+    list-style-type: none;
+    padding: 15px;
+    top: 20px;
+    right:0;
+    display: none;
+}
+.drop li{
+    margin-bottom: 16px;
+}
+.nav1 li:nth-child(3):hover .drop{
+    display: block;
+    cursor: pointer;
+}
+li:hover{
+    background-color: lightgreen;
+}
